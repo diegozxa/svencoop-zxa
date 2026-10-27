@@ -1,0 +1,36 @@
+/* Paleta tomada de svencoop.com (HTML del sitio oficial) */
+:root{--bg:#282828;--panel:#363849;--accent:#5F647E;--light:#D8E8F8;--soft:#C4D0DB;--muted:#A09CA0;--deep:#1c1c1c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--soft);font-family:Verdana,"Segoe UI",Arial,sans-serif;line-height:1.6}
+a{color:var(--light);text-decoration:none}
+b{color:var(--light)}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:.9rem 5%;background:var(--deep);position:sticky;top:0;z-index:10;border-bottom:3px solid var(--accent)}
+.logo{font-weight:900;font-size:1.2rem;color:var(--light);letter-spacing:2px}
+nav ul{display:flex;gap:1.2rem;list-style:none;flex-wrap:wrap}
+nav a{color:var(--soft);text-transform:uppercase;font-size:.8rem;letter-spacing:1px}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,var(--panel),var(--bg) 70%)}
+.hero-content{display:grid;grid-template-columns:1.6fr 1fr;gap:2rem;align-items:center;padding:3rem 5%;max-width:1200px;margin:auto}
+.tag{color:var(--muted);letter-spacing:3px;font-size:.8rem;font-weight:700}
+h1{font-size:clamp(1.8rem,4.5vw,3rem);line-height:1.15;margin:.4rem 0 .8rem;color:var(--light)}
+h1 span{color:var(--soft);font-weight:400}
+.facts{list-style:none;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem}
+.facts li{background:var(--deep);border:1px solid var(--accent);padding:.3rem .7rem;font-size:.85rem}
+.btn{display:inline-block;margin-top:.8rem;padding:.65rem 1.5rem;background:var(--accent);color:#fff;font-weight:700;text-transform:uppercase;font-size:.85rem;border:1px solid var(--soft)}
+.btn:hover{background:var(--soft);color:var(--bg)}
+main{padding:0 5%;max-width:1200px;margin:auto}
+section{padding:3rem 0}
+h2{font-size:1.6rem;text-transform:uppercase;margin-bottom:1.5rem;color:var(--light);border-left:5px solid var(--accent);padding-left:.8rem}
+h2 span{color:var(--muted);font-size:1rem;margin-right:.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.card,.feat{background:var(--panel);border:1px solid var(--accent);border-top:4px solid var(--accent);padding:1.4rem}
+.card h3,.feat h3{color:var(--light);font-size:1.3rem;margin-bottom:.7rem}
+.feat h3{font-size:1.1rem;font-family:Consolas,monospace}
+.specs{list-style:none}.specs li{padding:.35rem 0;border-bottom:1px dashed var(--accent)}
+.howto{margin-top:1.5rem;background:var(--deep);border:1px solid var(--accent);padding:1rem}
+.role{color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.soon{text-align:center;border:2px dashed var(--soft)}
+footer{text-align:center;padding:2rem;color:var(--muted);background:var(--deep);border-top:3px solid var(--accent)}
+.small{font-size:.75rem}
+@media(max-width:800px){.hero-content{grid-template-columns:1fr;padding:2rem 5%}nav{justify-content:center}}
